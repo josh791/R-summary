@@ -1,5 +1,5 @@
 :root {
-  --color-white: #fff;
+  --color-white: white;
   --color-light-purple: hsl(252, 100%, 67%);
   --color-dark-purple: hsla(256, 72%, 46%, 1);
 }
@@ -125,17 +125,28 @@ body {
   color: hsla(256, 72%, 46%, 1);
 }
 .button {
+  border: 0;
   border-radius: 2rem;
   padding: 1rem;
-  margin-top: auto;
-  background-color: #131620;
-  color: antiquewhite;
+  background-color:hsl(224, 30%, 27%)
+  ;
+  color: white;
 }
 .button:hover {
-  background-color: rgb(60, 31, 87);
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-purple),
+    var(--color-dark-purple)
+  );
 }
 
-@media screen and (max-width: 650px) {
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:750px) {
   body {
     align-items: flex-start;
     background-color: white;
