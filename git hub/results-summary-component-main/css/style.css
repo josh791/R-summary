@@ -131,6 +131,7 @@ body {
   background-color:hsl(224, 30%, 27%)
   ;
   color: white;
+  transition: all .2s;
 }
 .button:hover {
   background: linear-gradient(
